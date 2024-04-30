@@ -13,7 +13,7 @@ It is important to note that this normalizer performs a hard style reset. If you
 1. Install the package:
 
 ```bash
-$ npm install browser-style-normalizer -S
+$ npm install -S browser-style-normalizer
 ```
 
 2. Include it in your main stylesheet:
