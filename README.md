@@ -19,7 +19,7 @@ $ npm install browser-style-normalizer -S
 2. Include it in your main stylesheet:
 
 ```css
-@import url('node_modules/browser-style-normalizer/dist/index.css');
+@import url('/node_modules/browser-style-normalizer/dist/index.css');
 ```
 
 
@@ -65,12 +65,17 @@ $ npm install browser-style-normalizer -S
 
 ## Deployment
 
-1. Build the stylesheet:
+1. Install dependencies:
+```bash
+$ npm install
+```
+
+2. Build the stylesheet:
 ```bash
 $ npm start
 ```
 
-2. Publish to `npm`:
+3. Publish to `npm`:
 ```bash
 $ npm publish
 ```
