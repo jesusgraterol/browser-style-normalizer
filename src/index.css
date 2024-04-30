@@ -1,0 +1,451 @@
+/*
+ * Browser Style Normalizer
+ * The goal of this reset stylesheet is to reduce browser inconsistencies across native 
+ * HTML elements. The following rules have been extracted from:
+ * - https://meyerweb.com/eric/tools/css/reset/
+ * - https://andy-bell.co.uk/a-more-modern-css-reset/
+ * - https://www.joshwcomeau.com/css/custom-css-reset/
+ * - https://tailwindcss.com/docs/preflight
+ * - https://github.com/sindresorhus/modern-normalize
+ */
+
+/* 
+ * Reset general elements 
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+
+/* 
+ * Use a more-intuitive box-sizing model and reset the border properties.
+ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: inherit;
+}
+
+
+
+/* 
+ * Remove default margin.
+ */
+* {
+  margin: 0;
+}
+
+
+
+/*
+ * Use a consistent sensible line-height in all browsers, prevent adjustments of font size after 
+ * orientation changes in iOS, use a more readable tab size and disable tap highlights on iOS
+ */
+html,
+:host {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+
+/* 
+ * Typographic tweaks: Add accessible line-height, Improve text rendering 
+ */
+body {
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+/*
+ * Add the correct height and correct the inheritance of border color in Firefox. Also, ensure
+ * horizontal rules are visible by default.
+ * More info: https://bugzilla.mozilla.org/show_bug.cgi?id=190655
+ */
+hr {
+  height: 0;
+  color: inherit;
+  border-top-width: 1px;
+  margin:0;
+}
+
+
+
+/*
+ * Add the correct text decoration in Chrome, Edge, and Safari.
+ */
+abbr:where([title]) {
+  text-decoration: underline dotted;
+}
+
+
+
+/*
+ * Make replaced elements `display: block` by default and add `vertical-align: middle` to align 
+ * replaced elements more sensibly by default.
+ * More info: https://github.com/mozdevs/cssremedy/issues/14
+ */
+img,
+picture,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+
+
+
+/* 
+ * Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. 
+ * More info: https://github.com/mozdevs/cssremedy/issues/14
+ */
+img, picture, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* 
+ * HTML5 display-role reset for older browsers.
+ */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+
+/* 
+ * Change the font styles and remove the default padding in all browsers. Also, remove the margin
+ * in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  font-family: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/*
+ * Remove the inheritance of text transform in Edge and Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+
+
+/*
+ * Prevent resizing textareas horizontally by default.
+ */
+textarea {
+  resize: vertical;
+}
+
+
+
+/*
+ * Reset the default placeholder opacity in Firefox. 
+ * More info: https://github.com/tailwindlabs/tailwindcss/issues/3300
+*/
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+}
+
+
+
+/*
+ * Correct the inability to style clickable types in iOS and Safari and remove default button 
+ * styles.
+ */
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button;
+  background-color: transparent;
+  background-image: none;
+}
+
+
+
+/*
+ * Set the default cursor for buttons.
+ */
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+
+
+/*
+ * Make sure disabled buttons don't get the pointer cursor.
+ */
+:disabled {
+  cursor: not-allowed;
+}
+
+
+
+/* 
+ * Avoid text overflows.
+ */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+
+
+/* 
+ * Balance text wrapping on headings and remove the default font size and weights.
+ */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+
+
+/* 
+ * Create a root stacking context.
+ */
+#root, #__next {
+  isolation: isolate;
+}
+
+
+
+/* 
+ * Remove the list styles.
+ */
+ol, ul, dl, menu {
+	list-style: none;
+}
+
+
+
+/* 
+ * Reset quotes.
+ */
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+
+/* 
+ * Remove text indentation from table contents and correct the border color inheritance in Chrome 
+ * and Safari. Also, Remove gaps between table borders by default.
+ */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+  border-color: inherit;
+  text-indent: 0;
+}
+
+
+
+/* 
+ * Reset anchors 
+ */
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+
+
+/*
+ * Add the correct font weight in Edge and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+
+
+/* 
+ * Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp,
+pre {
+  font-size: 1em;
+}
+
+
+
+/*
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+
+
+/*
+ * Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+
+
+/*
+ * Use the modern Firefox focus style for all focusable elements.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+
+
+/*
+ * Remove the additional `:invalid` styles in Firefox. 
+ * More info: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+
+
+/*
+ * Add the correct vertical alignment in Chrome and Firefox.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+
+
+/*
+ * Correct the cursor style of increment and decrement buttons in Safari.
+ */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+
+
+/*
+ * Correct the odd appearance in Chrome and Safari and the outline style in Safari.
+ */
+[type='search'] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+
+
+/*
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+
+
+/*
+ * Correct the inability to style clickable types in iOS and Safari and change font properties 
+ * to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+
+
+/*
+ * Add the correct display in Chrome and Safari.
+ */
+summary {
+  display: list-item;
+}
+
+
+
+/*
+ * Reset default styling for dialogs.
+ */
+dialog {
+  padding: 0;
+}
+
+
+
+/* 
+ * Make elements with the HTML hidden attribute stay hidden by default.
+ */
+[hidden] {
+  display: none;
+}

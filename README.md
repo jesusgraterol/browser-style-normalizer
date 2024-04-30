@@ -38,18 +38,6 @@ $ npm install browser-style-normalizer -S
 
 <br/>
 
-## Deployment
-
-```bash
-$ npm publish
-```
-
-
-
-
-
-<br/>
-
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
@@ -66,5 +54,23 @@ $ npm publish
 - [A (more) Modern CSS Reset | Piccalilli](https://andy-bell.co.uk/a-more-modern-css-reset/)
 - [A Modern CSS Reset | Josh W Comeau](https://www.joshwcomeau.com/css/custom-css-reset/)
 - [Preflight | Tailwind CSS](https://tailwindcss.com/docs/preflight)
-- [Modern Normalize | 
-Sindre Sorhus](https://github.com/sindresorhus/modern-normalize)
+- [Modern Normalize | Sindre Sorhus](https://github.com/sindresorhus/modern-normalize)
+- [clean-css](https://github.com/clean-css/clean-css)
+
+
+
+
+
+<br/>
+
+## Deployment
+
+1. Build the stylesheet:
+```bash
+$ npm start
+```
+
+2. Publish to `npm`:
+```bash
+$ npm publish
+```
