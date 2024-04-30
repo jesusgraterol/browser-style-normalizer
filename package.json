@@ -1,0 +1,31 @@
+{
+  "name": "browser-style-normalizer",
+  "version": "1.0.0",
+  "description": "The browser-style-normalizer is a stylesheet that resets all the browser-built-in styles, guaranteeing consistency across all major browsers.",
+  "main": "dist/index.css",
+	"style": "dist/index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesusgraterol/browser-style-normalizer.git"
+  },
+  "keywords": [
+    "browser",
+    "style",
+    "preflight",
+    "pre-settings",
+    "css",
+    "normalizer",
+    "reset",
+    "style-reset",
+    "default"
+  ],
+  "author": "Jesus Graterol",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jesusgraterol/browser-style-normalizer/issues"
+  },
+  "homepage": "https://github.com/jesusgraterol/browser-style-normalizer#readme"
+}
