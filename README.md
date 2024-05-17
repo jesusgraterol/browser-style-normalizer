@@ -50,11 +50,13 @@ $ npm install -S browser-style-normalizer
 
 ## Acknowledgments
 
-- [Reset CSS | Meyer Web](https://meyerweb.com/eric/tools/css/reset/)
-- [A (more) Modern CSS Reset | Piccalilli](https://andy-bell.co.uk/a-more-modern-css-reset/)
+- [CSS Tools: Reset CSS | Meyer Web](https://meyerweb.com/eric/tools/css/reset/)
+- [A (more) Modern CSS Reset | Piccalilli](https://piccalil.li/blog/a-more-modern-css-reset/)
 - [A Modern CSS Reset | Josh W Comeau](https://www.joshwcomeau.com/css/custom-css-reset/)
 - [Preflight | Tailwind CSS](https://tailwindcss.com/docs/preflight)
 - [Modern Normalize | Sindre Sorhus](https://github.com/sindresorhus/modern-normalize)
+- [normalize.css](https://github.com/necolas/normalize.css)
+- [sanitize.css](https://github.com/csstools/sanitize.css)
 - [clean-css](https://github.com/clean-css/clean-css)
 
 
