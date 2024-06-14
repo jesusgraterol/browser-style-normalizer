@@ -75,7 +75,6 @@ html,
  * Typographic tweaks: Add accessible line-height, Improve text rendering 
  */
 body {
-  min-height: 100dvh;
   line-height: inherit;
   -webkit-font-smoothing: antialiased;
 }
