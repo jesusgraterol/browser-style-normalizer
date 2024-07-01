@@ -70,11 +70,21 @@ html,
 }
 
 
+/*
+ * Let the HTML element cover the entire viewport's height.
+ */
+html {
+  height: 100%;
+}
+
+
 
 /* 
- * Typographic tweaks: Add accessible line-height, Improve text rendering 
+ * Sets the body element's min-height to match the html element's height. It also adds the following
+ * typographic tweaks: Add accessible line-height, Improve text rendering.
  */
 body {
+  min-height: 100%;
   line-height: inherit;
   -webkit-font-smoothing: antialiased;
 }
