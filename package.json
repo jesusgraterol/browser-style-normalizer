@@ -1,6 +1,6 @@
 {
   "name": "browser-style-normalizer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The browser-style-normalizer is a stylesheet that resets all the browser-built-in styles, guaranteeing consistency across all major browsers.",
   "main": "dist/index.css",
   "style": "dist/index.css",
