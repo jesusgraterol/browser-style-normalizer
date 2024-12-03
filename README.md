@@ -1,6 +1,6 @@
 # Browser Style Normalizer
 
-The `browser-style-normalizer` is a stylesheet that resets all the browser-built-in styles, guaranteeing consistency across all major browsers.
+The `browser-style-normalizer` is a stylesheet that resets all the browser's built-in styles, guaranteeing consistency across all major browsers.
 
 It is important to note that this normalizer performs a hard style reset. If you are not using a robust CSS framework or component library, you should use a different normalizer.
 
@@ -10,13 +10,13 @@ It is important to note that this normalizer performs a hard style reset. If you
 
 ## Getting Started
 
-1. Install the package:
+Install the package:
 
 ```bash
-$ npm install -S browser-style-normalizer
+npm install -S browser-style-normalizer
 ```
 
-2. Include it in your main stylesheet:
+Include it in your main stylesheet:
 
 ```css
 @import url('/node_modules/browser-style-normalizer/dist/index.css');
@@ -67,17 +67,17 @@ $ npm install -S browser-style-normalizer
 
 ## Deployment
 
-1. Install dependencies:
+Install dependencies:
 ```bash
-$ npm install
+npm install
 ```
 
-2. Build the stylesheet:
+Build the stylesheet:
 ```bash
-$ npm start
+npm start
 ```
 
-3. Publish to `npm`:
+Publish to `npm`:
 ```bash
-$ npm publish
+npm publish
 ```
