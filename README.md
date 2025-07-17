@@ -13,7 +13,7 @@ It is important to note that this normalizer performs a hard style reset. If you
 Install the package:
 
 ```bash
-npm install -S browser-style-normalizer
+npm i -S browser-style-normalizer
 ```
 
 Include it in your main stylesheet:
@@ -58,26 +58,3 @@ Include it in your main stylesheet:
 - [normalize.css](https://github.com/necolas/normalize.css)
 - [sanitize.css](https://github.com/csstools/sanitize.css)
 - [clean-css](https://github.com/clean-css/clean-css)
-
-
-
-
-
-<br/>
-
-## Deployment
-
-Install dependencies:
-```bash
-npm install
-```
-
-Build the stylesheet:
-```bash
-npm start
-```
-
-Publish to `npm`:
-```bash
-npm publish
-```
